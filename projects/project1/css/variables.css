@@ -1,0 +1,16 @@
+:root {
+  --container-max-width: 1140px;
+  --container-padding: 15px;
+  --color-hover: #aa9dfa;
+  --background-color: #292e39;
+  --color-blue: #6d31ee;
+  --light-blue-color: #aa9dfa;
+  --color-active: #4f28a5;
+  --black-color: #121723;
+  --grey-color: #a1a6b4;
+  --dark-gray-color: #333;
+  --light-color: #e6e8ec;
+  --white-color: #fff;
+  --light-yellow-color: #f0d288;
+  --small-duration: .3s;
+}

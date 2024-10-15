@@ -1,0 +1,98 @@
+.header {
+  padding-top: 26px;
+  padding-bottom: 30px;
+}
+
+.header__container {
+  padding-top: 6px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  margin-right: auto;
+}
+
+.header__logo-link {
+  position: relative;
+  display: block;
+  flex-shrink: 0;
+  margin-right: 78px;
+  cursor: pointer;
+}
+
+.header__logo-link:focus-visible {
+  border: none;
+  outline: none;
+  outline-offset: 4px;
+  outline: 2px solid var(--color-hover);
+}
+
+.header__logo-link:active {
+  outline-offset: 4px;
+  outline: 2px solid var(--color-active);
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 55px;
+}
+
+.nav__link {
+  display: inline-block;
+  position: relative;
+  outline: none;
+  padding: 2px;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--black-color);
+  background-color: transparent;
+  transition: color var(--small-duration) ease-in-out,
+    background-color var(--small-duration) ease-in-out;
+}
+
+.nav__link:focus-visible:not(:hover) {
+  color: var(--white-color);
+  background-color: var(--color-hover);
+}
+
+.nav__link:hover {
+  color: var(--color-blue);
+}
+
+.nav__link:active {
+  color: var(--color-active);
+  background-color: var(--white-color);
+}
+
+.nav__item {
+  list-style-type: none;
+}
+
+.header__button svg {
+  display: block;
+}
+
+.header__button svg path {
+  display: block;
+  outline: none;
+  transition: stroke var(--small-duration) ease-in-out;
+}
+
+.header__button:focus-visible {
+  outline: none;
+}
+
+.header__button:focus-visible:not(:hover) path {
+  outline: none;
+  stroke: var(--color-hover);
+}
+
+.header__button:hover svg path {
+  stroke: var(--color-hover);
+}
+
+.header__button:active svg path {
+  stroke: var(--color-active);
+}

@@ -1,0 +1,131 @@
+
+.information {
+  padding-bottom: 50px;
+}
+
+.information__text {
+  margin-bottom: 50px;
+}
+
+.information__descr {
+  width: 70%;
+  letter-spacing: -0.1px;
+  color: var(--black-color);
+}
+
+.information__content {
+  display: flex;
+  gap: 32px;
+}
+
+.information__content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: calc(100% / 2);
+  border-radius: var(--border-radius);
+  background-image: url("../img/inf_1920.jpg");
+  background-color: #333;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.information__content-left-desc {
+  margin-right: 160px;
+  line-height: 2;
+  font-weight: 700;
+  color: var(--light-color);
+}
+
+.information__content-left-bottom {
+  display: flex;
+  padding: 52px 50px 49px 50px;
+  border-radius: var(--border-radius);
+  line-height: 19.5px;
+
+}
+
+.information__content-right {
+  width: calc(100% / 2);
+}
+
+.information__content-right-item-content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.information__content-right-item {
+  display: flex;
+  padding: 64px 40px 64px 58px;
+  border: 1px solid #cacaca;
+  border-radius: var(--border-radius);
+}
+
+.information__content-right-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px 0;
+}
+
+.information__content-right-item-top {
+  width: 190px;
+  height: 165px;
+  margin-right: 50px;
+  background: url("../img/frame-1_1920.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.information__content-right-item-bottom {
+  width: 190px;
+  height: 165px;
+  margin-right: 50px;
+  background: url("../img/frame-2_1920.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.information__content-right-item-title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29.26px;
+  color: var(--black-color);
+}
+
+.information__content-right-desc {
+  font-size: var(--text-size);
+  line-height: 2;
+  color: var(--black-color);
+}
+
+.information__content-left-button {
+  margin-top: 14px;
+  margin-bottom: 15px;
+  border: none;
+  background: 0;
+  padding: 24px 39px;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: var(--light-color);
+  outline: 1px solid var(--default-orange);
+  transition: 0.3s ease-in-out, color 0.2s ease-in-out;
+}
+
+.information__content-left-button:focus-visible:not(:hover) {
+  outline: var(--hover-orange);
+  background-color: var(--hover-orange);
+ }
+
+ .information__content-left-button:hover {
+  outline: var(--hover-orange);
+  background-color: var(--hover-orange);
+ }
+
+ .information__content-left-button:active {
+   background-color: var(--color-active);
+   outline: var(--color-active);
+ }

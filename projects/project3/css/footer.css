@@ -1,0 +1,226 @@
+
+.footer {
+  background-color: var(--black-color);
+  color: var(--grey-color);
+}
+
+.footer__content {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer__left {
+  min-width: 34%;
+}
+
+.footer__left-logo {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.footer__left-list {
+  margin-bottom: 90px;
+}
+
+.footer__left-item-link {
+  transition: color .3s ease-in-out;
+}
+
+.footer__left-item {
+  margin-bottom: 4px;
+}
+
+.footer__left-item-link:focus {
+  outline: none;
+}
+
+.footer__left-item-link:focus-visible:not(:hover) {
+  outline: 2px solid var(--default-orange);
+  outline-offset: 3px;
+}
+
+.footer__left-item-link:hover {
+  color: var(--default-orange);
+}
+
+.footer__left-item-link:active  {
+  color: var(--color-active);
+}
+
+.footer__left-social {
+  display: flex;
+  gap: 25px;
+  cursor: pointer;
+}
+
+.footer__left-svg path {
+  transition: fill .3s ease-in-out;
+}
+
+.footer__left-svg:focus {
+  outline: none;
+}
+
+.footer__left-svg:focus-visible {
+  outline: 2px solid var(--default-orange);
+  outline-offset: 3px;
+}
+
+.footer__left-svg:hover path {
+  fill: var(--default-orange);
+}
+
+.footer__left-svg:active path {
+  fill: var(--color-active);
+}
+
+.footer__center {
+  min-width: 32%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__center-title {
+  font-size: 48px;
+  letter-spacing: -1.6px;
+  line-height: 58.51px;
+  margin-bottom: 25px;
+ }
+
+.footer__center-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__center-form-input {
+  margin-bottom: 25px;
+}
+
+.footer__center-form-input,
+.footer__center-form-textarea {
+  padding: 21px 24px;
+  cursor: pointer;
+  border-radius: 16px;
+  color: var(--light-color);
+  border: none;
+  background-color: #414141;
+  transition: background-color .3s ease;
+}
+
+.footer__center-form-input:focus-visible:not(:hover),
+.footer__center-form-textarea:focus-visible:not(:hover) {
+ background-color: var(--grey-color);
+ outline: 1px solid var(--grey-color);
+}
+
+.footer__center-form-input:hover,
+.footer__center-form-textarea:hover {
+  background-color: var(--grey-color);
+  outline: 1px solid var(--grey-color);
+}
+
+.footer__center-form-input:active,
+.footer__center-form-textarea:active {
+  background-color: var(--grey-color);
+  outline: 1px solid var(--grey-color);
+}
+
+.footer__center-form-textarea {
+  min-height: 149px;
+  margin-bottom: 32px;
+}
+
+.footer__center-form-button {
+  width: 45%;
+ padding: 19px 37px;
+ margin-right: 14px;
+ border-radius: 16px;
+ border: none;
+ cursor: pointer;
+ color: var(--light-color);
+ background-color: var(--default-orange);
+ transition: background-color .3s ease;
+}
+
+.footer__center-form-button:focus {
+  outline: none;
+}
+
+.footer__center-form-button:focus-visible:not(:hover) {
+  background-color: var(--hover-orange);
+   outline: 1px solid var(--hover-orange);
+ }
+
+ .footer__center-form-button:hover {
+   background-color: var(--hover-orange);
+   outline: 1px solid var(--hover-orange);
+ }
+
+ .footer__center-form-button:active {
+   background-color: var(--color-active);
+   outline: 1px solid var(--color-active);
+ }
+
+.visible-checkbox {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+  border: 1px solid #cacaca;
+  vertical-align: middle;
+  transition: border-color .3s ease-in-out;
+}
+
+.visible-checkbox::before  {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 8px;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  background-image: url('../img/check.svg');
+  transition: opacity .3s ease-in-out;
+  background-position: center center;
+}
+
+.footer-checkbox-text {
+  vertical-align: middle;
+}
+
+.footer__center-form-checkbox:checked ~ .visible-checkbox::before   {
+ opacity: 1;
+}
+
+.footer__center-form-label {
+   cursor: pointer;
+   transition: color .3s ease-in-out;
+}
+
+.visible-checkbox:hover {
+  border-color: var(--default-orange);
+}
+
+.footer__center-form-label:hover  {
+  color: var(--default-orange);
+}
+
+.footer__center-form-label:hover .visible-checkbox {
+  border-color: var(--default-orange);
+}
+
+.footer__right {
+  min-width: 33%;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.footer__right-text {
+  padding-top: 37px;
+  padding-left: 188px;
+}
+
+

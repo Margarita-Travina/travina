@@ -1,0 +1,133 @@
+.stock {
+  padding-top: 95px;
+  padding-bottom: 132px;
+  background-color: var(--background-color);
+}
+
+.stock__container {
+  gap: 33px;
+}
+
+.stock__content {
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+}
+
+.stock__title:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 14%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url('../img/stock.svg');
+}
+
+.stock__title {
+  position: relative;
+  margin-top: 0;
+  padding-bottom: 38px;
+  margin-bottom: 12px;
+  font-weight: 400;
+  color: var(--light-yellow-color);
+  font-size: 48px;
+  line-height: 100%;
+}
+
+.stock__text,
+.stock__text-top {
+  color: var(--white-color);
+  line-height: 180%;
+}
+
+.stock__price {
+  margin: 0;
+  margin-bottom: 27px;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--white-color);
+}
+
+.stock__img {
+  min-width: 57%;
+  padding-top: 8px;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-color: var(--background-color);
+}
+
+.stock__svg {
+  width: 100%;
+  height: 13px;
+  margin-bottom: 19px;
+  background: url("../img/stock.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.stock__text-top {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.stock__text {
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.stock__btn {
+  display: flex;
+  max-width: max-content;
+  padding: 23px 10px 23px 10px;
+  border: 2px solid var(--light-yellow-color);
+  text-decoration: none;
+  gap: 9px;
+  align-items: center;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 100%;
+  color: var(--light-yellow-color);
+  transition: color var(--small-duration) ease-in-out,
+    background-color var(--small-duration) ease-in-out;
+}
+
+.stock__btn:focus-visible:not(:hover) {
+  outline: none;
+}
+
+.stock__btn:focus-visible:not(:hover) {
+  color: var(--black-color);
+  background-color: #bb973e;
+  border-color: var(--light-yellow-color);
+}
+
+.stock__btn:hover {
+  color: var(--black-color);
+  background-color: var(--light-yellow-color);
+}
+
+.stock__btn:hover svg .stock__btn-svg {
+  fill: var(--black-color);
+}
+
+.stock__btn:hover svg .stock__btn-svg-bg {
+  fill: var(--light-yellow-color);
+}
+
+.stock__btn:active {
+  background-color: #bb973e;
+  border-color: #bb973e;
+}
+
+.stock__btn:active svg .stock__btn-svg {
+  fill: var(--black-color);
+}
+
+.stock__btn:active svg .stock__btn-svg-bg {
+  fill: #bb973e;
+}

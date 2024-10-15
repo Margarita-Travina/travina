@@ -1,0 +1,103 @@
+
+.stages {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.stages__content {
+  display: flex;
+  gap: 32px;
+}
+
+.stages__text {
+  width: calc(100% / 2);
+}
+
+.stages__title {
+  margin-bottom: 32px;
+}
+
+.stages__text-title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--black-color);
+}
+
+.stages__img {
+  width: calc(100% / 2);
+  background-image: url('../img/stages_1920.jpg');
+  background-size: cover;
+  border-radius: var(--border-radius);
+}
+
+.stages__text-desc {
+ width: 91%;
+}
+
+.stages__text-button {
+  display: flex;
+  gap: 32px;
+ margin-top: 53px;
+}
+
+.stages__text-button-more {
+  border: none;
+  padding: 19px 38px;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.5px;
+  background-color: var(--default-orange);
+  color: var(--light-color);
+  transition: background-color .3s ease;
+}
+
+.stages__text-button-more:focus {
+  outline: none;
+}
+
+.stages__text-button-more:focus-visible:not(:hover) {
+  background-color: var(--hover-orange);
+   outline: 1px solid var(--hover-orange);
+ }
+
+ .stages__text-button-more:hover {
+   background-color: var(--hover-orange);
+   outline: 1px solid var(--hover-orange);
+ }
+
+ .stages__text-button-more:active {
+   background-color: var(--color-active);
+   outline: 1px solid var(--color-active);
+ }
+
+ .stages__text-button-document {
+  border: none;
+  padding: 19px 38px;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.5px;
+  outline: 2px solid var(--grey-color);
+  background: 0;
+  color: var(--black-color);
+  transition: 0.3s ease-in-out, color 0.2s ease-in-out;
+}
+
+.stages__text-button-document:focus-visible:not(:hover) {
+  background-color: var(--grey-color);
+  color: var(--light-color);
+  outline: 2px solid var(--grey-color);
+ }
+
+ .stages__text-button-document:hover {
+  color: var(--light-color);
+   background-color: var(--grey-color);
+ }
+
+ .stages__text-button-document:active {
+   background-color: var(--black-color);
+   color: var(--light-color);
+ }

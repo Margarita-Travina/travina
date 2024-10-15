@@ -1,0 +1,136 @@
+.footer-logo {
+  cursor: pointer;
+  width: 160px;
+  height: 20px;
+}
+
+.footer-logo:focus-visible {
+  outline: none;
+  outline: 2px solid var(--color-hover);
+  outline-offset: 4px;
+}
+
+.footer__social {
+  max-width: 500px;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  list-style: none;
+}
+
+.footer {
+  position: relative;
+  padding-top: 94px;
+  background-color: var(--background-color);
+}
+
+.footer__social-item-link svg {
+  width: 25px;
+  height: auto;
+}
+
+.footer__social-item-link {
+  display: flex;
+  cursor: pointer;
+}
+
+.footer__social-item-link path {
+  transition: fill .3s ease-in-out;
+}
+
+.footer__social-item-link:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.footer__social-item-link:focus-visible path {
+  fill: var(--color-hover);
+}
+
+.footer__social-item-link:hover path {
+  fill: var(--color-blue);
+}
+
+.footer__social-item-link:active path {
+  fill: var(--color-active);
+}
+
+.footer__top-link {
+  padding: 4px;
+  text-decoration: none;
+  color: var(--white-color);
+  transition: background-color var(--small-duration) ease-in-out,
+    color var(--small-duration) ease-in-out;
+}
+
+.footer__top-link:focus-visible {
+  outline: none;
+}
+
+.footer__top-link:focus-visible:not(:hover) {
+  color: var(--white-color);
+  background-color: var(--color-hover);
+}
+
+.footer__top-link:hover {
+  color: var(--color-blue);
+}
+
+.footer__top-link:active {
+  color: var(--color-active);
+}
+
+.footer__top {
+  padding-bottom: 103px;
+}
+
+.footer__top:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4%;
+  right: 0;
+  bottom: 54px;
+  background-repeat: repeat-x;
+  background-position: center;
+  background-image: url("../img/footer-top-svg-1920.svg");
+}
+
+.footer__top-right {
+  width: 44%;
+  margin-left: auto;
+}
+
+.footer__top-list {
+  margin: 0;
+  column-count: 3;
+  row-gap: 34px;
+  column-gap: 116px;
+}
+
+.footer__top-item {
+  list-style-type: none;
+}
+
+.footer__top-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.footer__text {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  color: var(--grey-color);
+}
+
+.footer__bottom {
+  background-color: var(--background-color);
+  padding-bottom: 30px;
+}

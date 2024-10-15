@@ -1,0 +1,13 @@
+:root {
+  --container-max-width: 1870px;
+  --container-padding: 50px;
+  --color-active: #e1670e;
+  --black-color: #000;
+  --text-size: 16px;
+  --border-radius: 32px;
+  --hover-orange: #ffb84d;
+  --default-orange: #ff9900;
+  --grey-color: #666;
+  --light-color: #fff;
+  --small-duration: .3s;
+}

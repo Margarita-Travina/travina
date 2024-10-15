@@ -1,0 +1,27 @@
+
+.faq {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.faq__title {
+  margin-bottom: 32px;
+}
+
+.faq__content-list {
+  display: flex;
+  gap: 32px;
+}
+
+.faq__content-item {
+  padding: 65px 83px 65px 60px;
+  border: 1px solid #cacaca;
+  border-radius: var(--border-radius);
+}
+
+.faq__content-item-title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29.26px;
+}
