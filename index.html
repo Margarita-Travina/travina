@@ -1,49 +1,221 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мое портфолио</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Привет, я Маргарита</h1>
-        <nav>
-            <ul>
-                <li><a href="#projects">Работы</a></li>
-                <li><a href="#about">Обо мне</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Мое портфолио | Маргарита</title>
+        <meta name="description"
+            content="Портфолио Маргариты – веб-разработчика. Здесь представлены мои работы, опыт и контактная информация.">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="page">
+        <header class="header">
+            <h1 class="header__title">Привет! Я Маргарита</h1>
+            <p class="header__subtitle">Frontend Developer</p>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#projects"
+                            class="nav__link">Работы</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Обо
+                            мне</a></li>
+                    <li class="nav__item"><a href="#contact"
+                            class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="projects" class="projects hidden">
+            <h2 class="projects__title">Мои работы</h2>
+            <div class="projects__container">
+                <div class="project-card hidden">
+                    <img src="img/project-card-1.png" alt="Проект 1"
+                        class="project-card__image">
+                    <h3 class="project-card__title">W-Wave Radio</h3>
+                    <p class="project-card__description">W-Wave Radio— это сайт,
+                        где медийный формат встречается с
+                        разговорным жанром, охватывая музыку, политику, историю,
+                        науку и культуру. Платформа включает прямые эфиры, архив
+                        передач и многое другое. Проект адаптивен, обеспечивая
+                        удобный доступ с любых устройств. Создан на HTML5, CSS3
+                        с акцентом на кроссбраузерную совместимость и
+                        современный UX/UI. Анимации и интерактивные элементы
+                        добавляют визуальную привлекательность, делая
+                        взаимодействие для пользователей более приятным</p>
+                    <div class="project-card__links">
+                        <button class="project-card__button"
+                            onclick="window.open('https://Margarita-Travina.github.io/travina/projects/project1/', '_blank')">Посмотреть
+                            проект</button>
+                        <button class="project-card__button"
+                            onclick="window.open('https://github.com/Margarita-Travina/travina/tree/main/projects/project1', '_blank')">Исходный
+                            код</button>
+                    </div>
+                </div>
+                <div class="project-card hidden">
+                    <img src="img/project-card-2.png" alt="Проект 2"
+                        class="project-card__image">
+                    <h3 class="project-card__title">Skillbox</h3>
+                    <p class="project-card__description">Это адаптивный сайт для
+                        продвижения и продажи
+                        образовательных курсов. Проект создан с фокусом на
+                        доступность и удобство для пользователя, что делает его
+                        простым в навигации и восприятии на всех устройствах.
+                        Основные технологии: HTML и CSS, кроссбраузерная
+                        поддержка и плавные анимации, которые обеспечивают
+                        визуальную привлекательность и последовательный
+                        пользовательский опыт. Проект выполнен без использования
+                        JavaScript, с особым акцентом на дизайн и
+                        функциональность.</p>
+                    <div class="project-card__links">
+                        <button class="project-card__button"
+                            onclick="window.open('https://Margarita-Travina.github.io/travina/projects/project2/', '_blank')">Посмотреть
+                            проект</button>
+                        <button class="project-card__button"
+                            onclick="window.open('https://github.com/Margarita-Travina/travina/tree/main/projects/project2', '_blank')">Исходный
+                            код</button>
+                    </div>
+                </div> <div class="project-card hidden">
+                    <img src="img/project-card-3.png" alt="Проект 3"
+                        class="project-card__image">
+                    <h3 class="project-card__title">Евклид - проектные
+                        системы</h3>
+                    <p class="project-card__description">Это одностраничный
+                        сайт, демонстрирующий информацию о
+                        продуктовой компании и её услугах. Основной акцент
+                        сделан на привлекательный дизайн и удобную навигацию.
+                        Используются HTML5, CSS для создания адаптивного и
+                        визуально приятного интерфейса.</p>
+                    <div class="project-card__links">
+                        <button class="project-card__button"
+                            onclick="window.open('https://Margarita-Travina.github.io/travina/projects/project3/', '_blank')">Посмотреть
+                            проект</button>
+                        <button class="project-card__button"
+                            onclick="window.open('https://github.com/Margarita-Travina/travina/tree/main/projects/project3', '_blank')">Исходный
+                            код</button>
+                    </div>
+                </div> <div class="project-card hidden">
+                    <img src="img/project-card-4.png" alt="Проект 4"
+                        class="project-card__image">
+                    <h3 class="project-card__title">Lagoona</h3>
+                    <p class="project-card__description">Это адаптивный сайт для
+                        бронирования отелей, который
+                        предлагает пользователям простое и интуитивно понятное
+                        решение для поиска и резервирования жилья. Сайт
+                        разработан с акцентом на удобство использования и
+                        доступность, обеспечивая легкую навигацию и оптимальный
+                        опыт на всех устройствах.</p>
+                    <div class="project-card__links">
+                        <button class="project-card__button"
+                            onclick="window.open('https://Margarita-Travina.github.io/travina/projects/project4/', '_blank')">Посмотреть
+                            проект</button>
+                        <button class="project-card__button"
+                            onclick="window.open('https://github.com/Margarita-Travina/travina/tree/main/projects/project4', '_blank')">Исходный
+                            код</button>
+                    </div>
+                </div> <div class="project-card hidden">
+                    <img src="img/project-card-5.png" alt="Проект 5"
+                        class="project-card__image">
+                    <h3 class="project-card__title">TODO</h3>
+                    <p class="project-card__description"> Это интерактивное
+                        веб-приложение для управления списком
+                        задач. Пользователи могут добавлять, удалять и отмечать
+                        выполненные задачи, что делает организацию повседневных
+                        дел более удобной и эффективной</p>
+                    <div class="project-card__links">
+                        <button class="project-card__button"
+                            onclick="window.open('https://Margarita-Travina.github.io/travina/projects/project5/', '_blank')">Посмотреть
+                            проект</button>
+                        <button class="project-card__button"
+                            onclick="window.open('https://github.com/Margarita-Travina/travina/tree/main/projects/project5', '_blank')">Исходный
+                            код</button>
+                    </div>
+                </div> <div class="project-card hidden">
+                    <img src="img/project-card-6.png" alt="Проект 6"
+                        class="project-card__image">
+                    <h3 class="project-card__title">Список студентов</h3>
+                    <p class="project-card__description">Это веб-приложение для
+                        добавления и управления данными
+                        студентов в таблице. Пользователи могут добавлять новых
+                        студентов, просматривать существующих и редактировать их
+                        информацию, что упрощает процесс управления данными.</p>
+                    <div class="project-card__links">
+                        <button class="project-card__button"
+                            onclick="window.open('https://Margarita-Travina.github.io/travina/projects/project6/', '_blank')">Посмотреть
+                            проект</button>
+                        <button class="project-card__button"
+                            onclick="window.open('https://github.com/Margarita-Travina/travina/tree/main/projects/project6', '_blank')">Исходный
+                            код</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about hidden">
+            <h2 class="about__title">Обо мне</h2>
+            <div class="about__container">
+                <h3 class="about__heading">Путь к программированию</h3>
+                <p class="about__text">Привет! Я увлеченная веб-разработчик,
+                    которая нашла свою настоящую страсть в мире
+                    программирования. Изучая дизайн, я познакомилась с
+                    программным кодом, и это стало для меня настоящим
+                    открытием.</p>
 
-    <section id="projects">
-        <h2>Мои работы</h2>
-        <div class="project">
-            <h3>Название проекта 1</h3>
-            <p>Описание проекта 1.</p>
-            <a href="ссылка_на_живую_версию" target="_blank">Посмотреть проект</a>
-            <a href="ссылка_на_код_в_GitHub" target="_blank">Исходный код</a>
-        </div>
-       
-    </section>
+                <h3 class="about__heading">Образование и навыки</h3>
+                <p class="about__text">Чтобы развить свои навыки, я прошла курс
+                    фронтенд-разработки в Skillbox. Этот курс открыл для меня
+                    новые горизонты: я узнала много нового, разработала
+                    несколько проектов и обрела уверенность в своих
+                    способностях.</p>
 
-    <section id="about">
-        <h2>Обо мне</h2>
-        <p>Краткая информация о тебе.</p>
-    </section>
+                <h3 class="about__heading">Стремление к развитию</h3>
+                <p class="about__text">Хотя у меня есть высшее образование как
+                    ветеринарного врача, моя истинная страсть — это создание
+                    цифровых продуктов. Я ищу возможности работать в команде,
+                    где смогу применять свои навыки и получать ценный
+                    коммерческий опыт.</p>
 
-    <section id="contact">
-        <h2>Контакты</h2>
-        <p>Email: margarita-leonteva@mail.ru</p>
-        <!-- Можешь добавить форму для обратной связи, если нужно -->
-    </section>
+                <h3 class="about__heading">Командная работа</h3>
+                <p class="about__text">Я уверена, что моя способность к
+                    обучению, креативный подход и страсть к разработке позволят
+                    мне внести значимый вклад в любой проект. Готова к новым
+                    вызовам и с нетерпением жду возможности сотрудничества с
+                    единомышленниками. Давайте вместе создавать что-то
+                    удивительное!</p>
 
-    <footer>
-        <p>&copy; 2024 Маргарита</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+                <img src="img/my-photo.jpg" alt="Моя фотография"
+                    class="about__photo">
+            </div>
+            <div class="skills">
+                <h3 class="skills__title">Навыки</h3>
+                <ul class="skills__list">
+                    <li class="skills__item">HTML, CSS, JavaScript</li>
+                    <li class="skills__item">React</li>
+                    <li class="skills__item">TypeScript</li>
+                    <li class="skills__item">SQL, API</li>
+                    <li class="skills__item">Webpack, Gulp</li>
+                    <li class="skills__item">Git, GitHub, GitLab</li>
+                    <li class="skills__item">Кроссбраузерная верстка, Адаптивная
+                        верстка</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact" class="visible contact">
+            <h2 class="contact__title">Контакты</h2>
+            <p class="contact__description">Свяжитесь со мной по электронной
+                почте или через социальные
+                сети:</p>
+            <p class="contact__email">Email: <a
+                    href="mailto:margarita-leonteva@mail.ru"
+                    class="contact__link">margarita-leonteva@mail.ru</a></p>
+            <p class="contact__telegram">Telegram: <a
+                    href="https://t.me/travina_margarita"
+                    class="contact__link">@travina</a></p>
+            <p class="contact__github">GitHub: <a
+                    href="https://github.com/Margarita-Travina"
+                    class="contact__link">Маргарита
+                    Травина</a></p>
+        </section>
+        <footer class="footer">
+            <p class="footer__text">&copy; 2024 Маргарита. Все права
+                защищены.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>
